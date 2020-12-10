@@ -1,0 +1,223 @@
+.mb{
+  margin-bottom: 110px;
+}
+h2 {
+  font-weight: bold;
+}
+h3{
+
+
+  // besarkan font-size ktiika di ukuran dekstop dan kecilkan fontsize ketika di ukuran tablet dan mobile mengunakan media queri 
+  font-weight: bold;
+  text-shadow: 1px 2px 1px burlywood;
+  letter-spacing: 5px;
+}
+
+@mixin ButtonHover {
+    background-color: green;
+
+    &:hover {
+      background-color:#4E97D8 ;
+    }
+}
+.ButtonHover {
+  @include ButtonHover();
+
+}
+#_CompNavbars{
+  background-color: #fff;
+  a{
+    color: black ;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 1s ease;
+    &:hover {
+      color: blue;
+      transition: all 0.55s ease-out;
+    }
+  }
+  #CompNavbars_Logo{
+    display: block;
+    width: 20%;
+  }
+ 
+  
+  li {
+    text-align: center;
+    // margin-left: 10%;
+  }
+
+  button{ 
+    outline: 0;
+    border: 0;
+  }
+
+  // mobile Nav
+  .MobileNav  {
+    
+    .nav-link {
+      &:hover {
+        color: blue;
+      }
+    }
+    small {
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+
+  .social_media {
+    display: flex ;
+    justify-content: space-evenly;
+    a{ 
+      padding: 5px;
+      text-decoration: none;
+      line-height: 3px;
+      // border: 1px solid chocolate;
+      border-radius: 20px;
+    }
+    
+  }
+}
+
+
+// Carousel_Header 
+#carousel_header {
+  p{
+    width: 60%;
+    margin:10px auto 0 auto ;
+    margin-bottom: 20px;
+  }
+      
+      .carousel-item {
+          &::before  {
+            content: '';
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        
+          }
+        }
+        .carousel-caption {
+          top: 40%;
+          left: 15%;
+        }
+
+}
+
+// Page Program 
+#program_kami { 
+
+  .caption_program{ 
+    text-align: center;
+    
+    &::after{
+      display: block;
+      content: '____________';
+      font-weight: bold;
+      color: red;
+    }  
+  }
+
+  .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  img{
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+    .card-body{
+      border-radius: 10px;
+      position: absolute;
+      top: 80%;
+      background-color: white;
+      width: 90%;
+      border-top: 5px solid red;
+     border-bottom: 5px solid blue;
+
+     small{
+       color: grey;
+     }
+      
+    }
+  }
+}
+
+
+//Responsive Brekpoint
+    @media (max-width: 2500px) { 
+      #DekstopNav{ 
+        display: none;
+
+      }
+
+      h3{
+        font-size: 50px;
+      }      
+     }
+
+     @media (max-width: 770px) 
+     {
+.carousel-caption {
+  button {
+    display: none !important;
+  }
+}
+      }
+
+    @media (max-width: 769px) { 
+
+      #carousel_header{
+        .carousel-caption {
+          top: 25% !important;
+        }
+      }
+
+      
+
+    }    
+
+    @media (max-width: 500px) { 
+      .carousel-caption{ 
+        p {
+          display: none !important;
+        }
+      }
+    }
+    @media (max-width: 576px) { 
+      .carousel-caption {
+        position: absolute;
+        top: 10% !important;
+        button{
+          display: none;
+        }
+      }
+      
+    }    
+
+
+
+
+
+
+    // preLoader 
+
+
+
+    .loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('https://www.printpak.com.sg/image/catalog/icon/book_preloader.gif') 50% 50% no-repeat black;
+
+  }

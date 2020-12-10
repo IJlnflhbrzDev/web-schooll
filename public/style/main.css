@@ -1,0 +1,192 @@
+.mb {
+  margin-bottom: 110px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  text-shadow: 1px 2px 1px burlywood;
+  letter-spacing: 5px;
+}
+
+.ButtonHover {
+  background-color: green;
+}
+
+.ButtonHover:hover {
+  background-color: #4E97D8;
+}
+
+#_CompNavbars {
+  background-color: #fff;
+}
+
+#_CompNavbars a {
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#_CompNavbars a:hover {
+  color: blue;
+  -webkit-transition: all 0.55s ease-out;
+  transition: all 0.55s ease-out;
+}
+
+#_CompNavbars #CompNavbars_Logo {
+  display: block;
+  width: 20%;
+}
+
+#_CompNavbars li {
+  text-align: center;
+}
+
+#_CompNavbars button {
+  outline: 0;
+  border: 0;
+}
+
+#_CompNavbars .MobileNav .nav-link:hover {
+  color: blue;
+}
+
+#_CompNavbars .MobileNav small {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+#_CompNavbars .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#_CompNavbars .social_media a {
+  padding: 5px;
+  text-decoration: none;
+  line-height: 3px;
+  border-radius: 20px;
+}
+
+#carousel_header p {
+  width: 60%;
+  margin: 10px auto 0 auto;
+  margin-bottom: 20px;
+}
+
+#carousel_header .carousel-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#carousel_header .carousel-caption {
+  top: 40%;
+  left: 15%;
+}
+
+#program_kami .caption_program {
+  text-align: center;
+}
+
+#program_kami .caption_program::after {
+  display: block;
+  content: '____________';
+  font-weight: bold;
+  color: red;
+}
+
+#program_kami .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#program_kami .card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+#program_kami .card .card-body {
+  border-radius: 10px;
+  position: absolute;
+  top: 80%;
+  background-color: white;
+  width: 90%;
+  border-top: 5px solid red;
+  border-bottom: 5px solid blue;
+}
+
+#program_kami .card .card-body small {
+  color: grey;
+}
+
+@media (max-width: 2500px) {
+  #DekstopNav {
+    display: none;
+  }
+  h3 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 770px) {
+  .carousel-caption button {
+    display: none !important;
+  }
+}
+
+@media (max-width: 769px) {
+  #carousel_header .carousel-caption {
+    top: 25% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-caption p {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    position: absolute;
+    top: 10% !important;
+  }
+  .carousel-caption button {
+    display: none;
+  }
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("https://www.printpak.com.sg/image/catalog/icon/book_preloader.gif") 50% 50% no-repeat black;
+}
+/*# sourceMappingURL=main.css.map */
