@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 html,
 body {
   overflow-x: hidden;
@@ -26,6 +27,7 @@ h3 {
 }
 
 #_CompNavbars {
+  z-index: 9999;
   background-color: #fff;
 }
 
@@ -55,6 +57,13 @@ h3 {
 #_CompNavbars button {
   outline: 0;
   border: 0;
+}
+
+#_CompNavbars .MobileNav {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 #_CompNavbars .MobileNav .nav-link:hover {
@@ -104,11 +113,17 @@ h3 {
   left: 15%;
 }
 
-#program_kami .caption_program {
+.caption_title {
   text-align: center;
 }
 
-#program_kami .caption_program::after {
+.caption_title h4 {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.caption_title::after {
   display: block;
   content: '____________';
   font-weight: bold;
@@ -140,12 +155,36 @@ h3 {
   top: 80%;
   background-color: white;
   width: 90%;
-  border-top: 5px solid red;
-  border-bottom: 5px solid blue;
+  border-bottom: 3px solid green;
 }
 
 #program_kami .card .card-body small {
   color: grey;
+}
+
+.card {
+  background-color: #e9ecef;
+}
+
+#KenapaKami .contents_acordion button {
+  color: orange;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: white;
+  text-align: center !important;
+}
+
+#KenapaKami .contents_acordion button:hover {
+  color: orangered;
+}
+
+#KenapaKami .card-header {
+  margin-bottom: 20px;
+}
+
+#KenapaKami .card-body {
+  background-color: #28a745;
+  color: white;
 }
 
 @media (max-width: 2500px) {

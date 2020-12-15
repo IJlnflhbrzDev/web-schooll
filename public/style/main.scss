@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html, 
 body { 
   overflow-x: hidden;
@@ -12,7 +13,6 @@ h2 {
 h3{
 
 
-  // besarkan font-size ktiika di ukuran dekstop dan kecilkan fontsize ketika di ukuran tablet dan mobile mengunakan media queri 
   font-weight: bold;
   text-shadow: 1px 2px 1px burlywood;
   letter-spacing: 5px;
@@ -30,6 +30,7 @@ h3{
 
 }
 #_CompNavbars{
+  z-index: 9999;
   background-color: #fff;
   a{
     color: black ;
@@ -59,7 +60,10 @@ h3{
 
   // mobile Nav
   .MobileNav  {
-    
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
     .nav-link {
       &:hover {
         color: blue;
@@ -113,13 +117,13 @@ h3{
         }
 
 }
-
-// Page Program 
-#program_kami { 
-
-  .caption_program{ 
+.caption_title{ 
     text-align: center;
-    
+    h4{
+      font-size: 25px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+    }
     &::after{
       display: block;
       content: '____________';
@@ -127,7 +131,8 @@ h3{
       color: red;
     }  
   }
-
+// Page Program 
+#program_kami { 
   .card {
   display: flex;
   justify-content: center;
@@ -144,8 +149,8 @@ h3{
       top: 80%;
       background-color: white;
       width: 90%;
-      border-top: 5px solid red;
-     border-bottom: 5px solid blue;
+      // border-top: 5px solid red;
+     border-bottom:3px solid green;
 
      small{
        color: grey;
@@ -154,7 +159,35 @@ h3{
     }
   }
 }
+.card {
+  background-color: #e9ecef;
+}
+#KenapaKami {
+  .contents_acordion {
+    button { 
+      color: orange;
+      font-size: 18px;
+      text-decoration: none;
+      background-color: white;
+      text-align: center !important;
 
+      &:hover {
+        color: orangered;
+      }
+    }
+    
+  }
+
+  
+  .card-header{
+    margin-bottom: 20px;
+  }
+  .card-body {
+    background-color: #28a745;
+    color: white;
+  }
+
+}
 
 //Responsive Brekpoint
     @media (max-width: 2500px) { 
