@@ -18,6 +18,9 @@ h3{
   letter-spacing: 5px;
 }
 
+h5{ 
+  font-size: 16px;
+}
 @mixin ButtonHover {
     background-color: green;
 
@@ -188,6 +191,23 @@ h3{
     color: white;
   }
 
+}
+
+#Statistik { 
+  background-image: url('https://static.republika.co.id/uploads/images/inpicture_slide/ribuan-guru-menghadiri-acara-puncak-peringatan-hari-guru-_131127185519-836.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right :0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+  }
 }
 
 //Responsive Brekpoint

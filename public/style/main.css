@@ -18,6 +18,10 @@ h3 {
   letter-spacing: 5px;
 }
 
+h5 {
+  font-size: 16px;
+}
+
 .ButtonHover {
   background-color: green;
 }
@@ -189,6 +193,24 @@ h3 {
 #KenapaKami .card-body {
   background-color: #28a745;
   color: white;
+}
+
+#Statistik {
+  background-image: url("https://static.republika.co.id/uploads/images/inpicture_slide/ribuan-guru-menghadiri-acara-puncak-peringatan-hari-guru-_131127185519-836.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#Statistik::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 2500px) {
