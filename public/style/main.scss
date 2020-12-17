@@ -1,6 +1,9 @@
+*{
+  box-sizing: border-box
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-html, 
-body { 
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -18,7 +21,7 @@ h3{
   letter-spacing: 5px;
 }
 
-h5{ 
+h5{
   font-size: 16px;
 }
 @mixin ButtonHover {
@@ -49,13 +52,13 @@ h5{
     display: block;
     width: 20%;
   }
- 
-  
+
+
   li {
     text-align: center;
   }
 
-  button{ 
+  button{
     outline: 0;
     border: 0;
   }
@@ -71,7 +74,7 @@ h5{
         color: blue;
       }
     }
-   
+
     small {
       margin-left: 20px;
       font-weight: 500;
@@ -82,19 +85,19 @@ h5{
   .social_media {
     display: flex ;
     justify-content: space-evenly;
-    a{ 
+    a{
       padding: 5px;
       text-decoration: none;
       line-height: 3px;
       // border: 1px solid chocolate;
       border-radius: 20px;
     }
-    
+
   }
 }
 
 
-// Carousel_Header 
+// Carousel_Header
 #carousel_header {
   overflow:  hidden !important;
   p{
@@ -102,7 +105,7 @@ h5{
     margin:10px auto 0 auto ;
     margin-bottom: 20px;
   }
-      
+
       .carousel-item {
           &::before  {
             content: '';
@@ -112,7 +115,7 @@ h5{
             left: 0;
             bottom: 0;
             right: 0;
-        
+
           }
         }
         .carousel-caption {
@@ -121,7 +124,7 @@ h5{
         }
 
 }
-.caption_title{ 
+.caption_title{
     text-align: center;
     h4{
       font-size: 25px;
@@ -133,10 +136,10 @@ h5{
       content: '____________';
       font-weight: bold;
       color: red;
-    }  
+    }
   }
-// Page Program 
-#program_kami { 
+// Page Program
+#program_kami {
   .card {
   display: flex;
   justify-content: center;
@@ -159,7 +162,7 @@ h5{
      small{
        color: grey;
      }
-      
+
     }
   }
 }
@@ -168,7 +171,7 @@ h5{
 }
 #KenapaKami {
   .contents_acordion {
-    button { 
+    button {
       color: orange;
       font-size: 18px;
       text-decoration: none;
@@ -179,10 +182,10 @@ h5{
         color: orangered;
       }
     }
-    
+
   }
 
-  
+
   .card-header{
     margin-bottom: 20px;
   }
@@ -193,13 +196,13 @@ h5{
 
 }
 
-#Statistik { 
+#Statistik {
   background-image: url('https://static.republika.co.id/uploads/images/inpicture_slide/ribuan-guru-menghadiri-acara-puncak-peringatan-hari-guru-_131127185519-836.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   position: relative;
-  &::before { 
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -210,19 +213,22 @@ h5{
   }
 }
 
+
+
 //Responsive Brekpoint
-    @media (max-width: 2500px) { 
-      #DekstopNav{ 
+
+    @media (max-width: 2500px) {
+      #DekstopNav{
         display: none;
 
       }
 
       h3{
         font-size: 50px;
-      }      
+      }
      }
 
-     @media (max-width: 770px) 
+     @media (max-width: 770px)
      {
 .carousel-caption {
   button {
@@ -231,7 +237,7 @@ h5{
 }
       }
 
-    @media (max-width: 769px) { 
+    @media (max-width: 769px) {
 
       #carousel_header{
         .carousel-caption {
@@ -239,18 +245,18 @@ h5{
         }
       }
 
-      
 
-    }    
 
-    @media (max-width: 500px) { 
-      .carousel-caption{ 
+    }
+
+    @media (max-width: 500px) {
+      .carousel-caption{
         p {
           display: none !important;
         }
       }
     }
-    @media (max-width: 576px) { 
+    @media (max-width: 576px) {
       .carousel-caption {
         position: absolute;
         top: 10% !important;
@@ -258,15 +264,15 @@ h5{
           display: none;
         }
       }
-      
-    }    
+
+    }
 
 
 
 
 
 
-    // preLoader 
+    // preLoader
 
 
 
