@@ -1,6 +1,4 @@
-*{
-  box-sizing: border-box
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html,
 body {
@@ -212,9 +210,43 @@ h5{
     background-color: rgba($color: #000000, $alpha: 0.4);
   }
 }
+#Team_Gallery{
+  .gallery {
+    background-image: url('https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
 
+    .image_gallery {
+      overflow: hidden;
+      img {
+        cursor: zoom-in;
+        width: 100%;
+        margin-bottom: 10px;
+        transition: 0.75s;
+&:hover {
+  transform: scale(1.2);
+}
 
+      }
+    }
+  }
+}
 
+footer {
+  outline: none;
+  border: none;
+  .alert {
+    border: none !important;
+    background-color: chocolate;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+
+  }
+}
 //Responsive Brekpoint
 
     @media (max-width: 2500px) {
@@ -225,6 +257,7 @@ h5{
 
       h3{
         font-size: 50px;
+
       }
      }
 

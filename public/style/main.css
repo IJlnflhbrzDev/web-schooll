@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html,
 body {
   overflow-x: hidden;
@@ -216,6 +211,47 @@ h5 {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+#Team_Gallery .gallery {
+  background-image: url("https://images.pexels.com/photos/2694434/pexels-photo-2694434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#Team_Gallery .gallery .image_gallery {
+  overflow: hidden;
+}
+
+#Team_Gallery .gallery .image_gallery img {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+#Team_Gallery .gallery .image_gallery img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer {
+  outline: none;
+  border: none;
+}
+
+footer .alert {
+  border: none !important;
+  background-color: chocolate;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  text-align: center;
+  color: white;
 }
 
 @media (max-width: 2500px) {
