@@ -35,6 +35,15 @@ h5{
 
 }
 #_CompNavbars{
+  nav {
+    transition: all .5s ease;;
+  }
+    // animated scroll using javascript
+  .animated_scrolling_change{
+    background-color: rgb(255, 255, 255);
+  }
+
+
   z-index: 9999;
   background-color: #fff;
   a{
