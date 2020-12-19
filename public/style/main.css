@@ -27,7 +27,7 @@ h5 {
 }
 
 .ButtonHover:hover {
-  background-color: #4E97D8;
+  background-color: #4e97d8;
 }
 
 #_CompNavbars {
@@ -36,8 +36,8 @@ h5 {
 }
 
 #_CompNavbars nav {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #_CompNavbars .animated_scrolling_change {
@@ -116,7 +116,7 @@ h5 {
 }
 
 #carousel_header .carousel-item::before {
-  content: '';
+  content: "";
   background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
@@ -136,13 +136,13 @@ h5 {
 
 .caption_title h4 {
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
 .caption_title::after {
   display: block;
-  content: '____________';
+  content: "____________";
   font-weight: bold;
   color: red;
 }
@@ -213,7 +213,7 @@ h5 {
 }
 
 #Statistik::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -268,16 +268,28 @@ footer .card .card-header {
 }
 
 footer .card .card-footer {
-  background: #C04848;
+  background: #c04848;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#480048), to(#C04848));
-  background: linear-gradient(to right, #480048, #C04848);
+  background: -webkit-gradient(linear, left top, right top, from(#480048), to(#c04848));
+  background: linear-gradient(to right, #480048, #c04848);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 footer img {
   width: 120px;
+}
+
+@media (max-width: 992px) {
+  #mobile_carousel_direction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 2500px) {
